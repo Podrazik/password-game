@@ -96,10 +96,10 @@ def ask6():
     if a:
         rim = False
         answer = enter.text()
-        if answer.find("XXC") != -1 or answer.find('ХХС') != -1:
+        if answer.find("LV") != -1:
             rim = True
         if not rim:
-            error.addItem("! Запишите сумму всех целых чисел от 1 до 200 в римской записи")
+            error.addItem("! Запишите сумму всех целых чисел от 1 до 10 в римской записи")
             mixer.music.load('erro.mp3')
             mixer.music.play()
         else:
