@@ -7,6 +7,7 @@ mixer.music.load('erro.mp3')
 
 
 def ask1():
+    error.clear()
     answer = enter.text()
     answer = answer.replace(' ', '')
     if len(answer) in range(0, 6):
@@ -176,9 +177,10 @@ def ask10():
             return True
 
 
-
 app = QApplication([])
 main_win = QWidget()
+
+app.setStyleSheet('QPushButton {background-color: rgb(250, 162, 162); font: bold 15px}')
 
 main_win.resize(700, 500)
 main_win.setWindowTitle('Регистрация на Госуслугах')
